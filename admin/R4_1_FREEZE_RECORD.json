@@ -1,0 +1,11 @@
+{
+  "run_id": "R4_1_20261017T121855_838848Z",
+  "status": "PASS",
+  "bundle_path": "/content/drive/MyDrive/RTL_QOR_DATASET_V2/07_manuscript_closure/03_results/audits/R4_1_20261017T121855_838848Z/R4_1_20261017T121855_838848Z_RESULT_BUNDLE.zip",
+  "bundle_sha256": "9f9d7695af8af9f862dabad13db89a52a4590bbf639d6be28b5a031b3e8b00a5",
+  "parent_hashes": {
+    "R4": "298b1cd1fa2dffe283ad7736dec0d18654facc52136d1ce65d66fa254f5fe00f",
+    "M14_3": "5f1098335d86870e123c0e8e85d1763211372f86d6c35e9850526acb788ddb02"
+  },
+  "next_step": "MANUSCRIPT_WRITING_ONLY;NO_M15;FUTURE_IDEAS_LOGGED"
+}
