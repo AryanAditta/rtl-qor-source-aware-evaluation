@@ -66,10 +66,18 @@ This repository distinguishes three different goals:
 
 See `docs/REPRODUCIBILITY.md` and `reproducibility/RELEASE_MANIFEST.md` for the exact included/excluded scope.
 
-## Manuscript and citation
+## Manuscript, citation and archival release
 
-The manuscript is currently in submission preparation for *Integration, the VLSI Journal*. A versioned archival DOI will be added after the public release is frozen for submission.
+The manuscript is currently in submission preparation for *Integration, the VLSI Journal*.
 
-## License and third-party material
+The submission-oriented archival release is designated **v1.0.0**. `CITATION.cff` contains repository citation metadata. After the GitHub repository is connected to Zenodo and the v1.0.0 release is archived, the **version-specific Zenodo DOI** will be added here and to the manuscript Data and Code Availability statement.
 
-A final code/data license will be added after author approval. Third-party source material is not redistributed unless its license explicitly permits redistribution. Until a license is added, no additional rights are granted beyond those provided by applicable law.
+## Licensing
+
+This repository uses a split licensing model:
+
+- **Source code:** MIT License, see `LICENSE`.
+- **Original data tables, prediction records, result tables, metadata and documentation:** Creative Commons Attribution 4.0 International (**CC BY 4.0**), see `LICENSE-DATA.md`.
+- **Third-party material:** not relicensed. External RTL, software, libraries and published methods remain governed by their respective upstream licenses and terms.
+
+The public package intentionally avoids redistributing third-party RTL unless redistribution permission is clear. See `reproducibility/THIRD_PARTY_NOTICE.md` for details.
