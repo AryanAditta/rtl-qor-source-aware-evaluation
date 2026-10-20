@@ -6,4 +6,4 @@ The public release intentionally avoids redistributing third-party source RTL or
 
 Referenced external tools and methods include Yosys/ABC, OpenSTA, the Nangate45 library and the released MasterRTL implementation. Inclusion of an identifier, metric or derived feature does not relicense the corresponding upstream project.
 
-A final repository-wide license should be added only after author/supervisor approval and after confirming that its scope does not conflict with any redistributed third-party material.
+Repository-authored source code is licensed under the MIT License in `LICENSE`. Repository-authored data tables, prediction records, result tables, metadata and documentation are licensed under CC BY 4.0 as described in `LICENSE-DATA.md`. These licenses apply only to material for which the repository authors hold licensing rights and do not supersede any third-party license or term.
