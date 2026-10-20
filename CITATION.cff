@@ -6,12 +6,8 @@ authors:
   - family-names: "Rahman Aditta"
     given-names: "Arian"
 repository-code: "https://github.com/AryanAditta/rtl-qor-source-aware-evaluation"
-version: "1.0.0"
+version: "1.1.0"
 date-released: 2026-10-20
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.23489958
-url: "https://doi.org/10.5281/zenodo.23489958"
 license: MIT
 keywords:
   - RTL
@@ -23,11 +19,13 @@ keywords:
   - reproducibility
 abstract: >-
   Curated reproducibility package for the manuscript "Source-Aware Evaluation
-  of RTL Area and Timing Prediction with Prospective Confirmation." The
-  repository contains compact frozen prediction-level data, manuscript-facing
-  evidence tables, closure records and scripts for checking reported metrics,
-  while deliberately excluding the full historical research archive and
-  third-party RTL whose redistribution rights are uncertain. Source code is
-  licensed under MIT; original data tables, prediction records, result tables,
-  metadata and documentation are licensed under CC BY 4.0 as specified in the
-  repository licensing files.
+  of RTL Area and Timing Prediction with Prospective Confirmation." Version
+  1.1.0 adds post-hoc robustness scripts and saved outputs that re-score frozen
+  predictions and intervals without model refitting, recalibration or
+  reselection. The repository contains compact frozen prediction-level data,
+  manuscript-facing evidence tables, closure records and scripts for checking
+  reported metrics, while deliberately excluding the full historical research
+  archive and third-party RTL whose redistribution rights are uncertain.
+  Source code is licensed under MIT; original data tables, prediction records,
+  result tables, metadata and documentation are licensed under CC BY 4.0 as
+  specified in the repository licensing files.
