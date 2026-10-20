@@ -7,6 +7,11 @@ authors:
     given-names: "Arian"
 repository-code: "https://github.com/AryanAditta/rtl-qor-source-aware-evaluation"
 version: "1.0.0"
+date-released: 2026-10-20
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23489958
+url: "https://doi.org/10.5281/zenodo.23489958"
 license: MIT
 keywords:
   - RTL
@@ -22,4 +27,7 @@ abstract: >-
   repository contains compact frozen prediction-level data, manuscript-facing
   evidence tables, closure records and scripts for checking reported metrics,
   while deliberately excluding the full historical research archive and
-  third-party RTL whose redistribution rights are uncertain.
+  third-party RTL whose redistribution rights are uncertain. Source code is
+  licensed under MIT; original data tables, prediction records, result tables,
+  metadata and documentation are licensed under CC BY 4.0 as specified in the
+  repository licensing files.
