@@ -1,0 +1,4 @@
+cohort,intended,prediction_supported,valid_labels,paired,primary_target,role
+Reserve50,50,47,40,39,AREA,prospective primary
+Source50,50,41,45,39,TIMING_TMIN,prospective primary; Area secondary
+External83,100,100,83,83,AREA;TIMING_TMIN,original blind external
