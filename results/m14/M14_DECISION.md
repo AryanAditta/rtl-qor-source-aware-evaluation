@@ -1,0 +1,46 @@
+# M14 decision — M14_3 same-protocol input-resolution repair
+
+M14_2 passed Gate 2 (167/168 rows, 165/166 components) but stopped at Gate 3 before any path record was assessed, because no source graph could be located (empty graph locators; Yosys package not resolved). M14_3 reuses the M14_2 Gate 2 receipts byte-for-byte and repairs only graph-input resolution by SHA-256 identity. Gates, thresholds, the frozen mapping rule, the released learner recipe and the original deadline are unchanged. M14_2 and M14_initial records remain preserved. See M14_3_README.md.
+
+MasterRTL-method adaptation under our timing-label contract
+
+```json
+{
+  "run_id": "M14_3_20261017T022458_899335Z",
+  "repair_of_run_id": "M14_20261017T010647_450498Z",
+  "supersedes_run_id": "M14_20261017T010647_450498Z",
+  "prior_GATE2_result_valid": true,
+  "prior_record_preserved": true,
+  "reused_prior_STA_reports_this_session": 168,
+  "software_repair_not_protocol_amendment": true,
+  "method_name": "MasterRTL-method adaptation under our timing-label contract",
+  "outcome": "GATED_FIDELITY_BOUNDARY",
+  "metric_specific_outcome": null,
+  "scope_complete": true,
+  "last_passed_gate": 2,
+  "failed_gate": 3,
+  "failed_gate_detail": "0/167 bridge-valid rows; 0/165 components meet 95% fully usable records. Missing graphs are an input-recovery boundary, not a measured model-accuracy failure.",
+  "protocol_sha256": "168023aaa7a31a2d5d6f8014245a19e7feed4e17ad2dc1c39225148e34464506",
+  "parent_hashes": {
+    "M12": "d7a556b763fe71c51804a9e2f94f20186cc38c775f879515aad41814bf5d59ea",
+    "M13": "a72990d39d305778de48a197f4e35570b8baa718bb19f64746a52802e433bb3c",
+    "M14_INITIAL": "a4785686540a63ba15884be0efebb65c76748618d126b04191c0ef626b4c0a03",
+    "M14_2": "12e14d3f6b5c89e62ab57bde62a272d609db7188fa4b30712b3e1de5eed37bcd"
+  },
+  "R3_2_sha256": "143521db09bf8d37d2bcb28ac63a6642405b24c3b8a86e7ebb647bf9036540c3",
+  "first_gate1_started_utc": "2026-10-17T00:47:18.469613+00:00",
+  "deadline_utc": "2026-10-24T00:47:18.469613+00:00",
+  "STA_runs_this_session": 0,
+  "path_model_fits_this_session": 0,
+  "baseline_scores_permitted": false,
+  "existing_labels_changed": false,
+  "frozen_models_or_M05_predictions_changed": false,
+  "evidence_role": "FEASIBILITY_AUDIT",
+  "executed_notebook_captured": true,
+  "next_step": "AUDIT_M14_3_THEN_APPEND_ONLY_R4_1;NO_M15"
+}
+```
+
+M14 is a matched held-out evaluation-row comparison under inherited folds, but training support may differ between methods. It therefore does not establish method superiority when effective training populations differ.
+
+The adaptation stopped at Gate 3: 0/167 bridge-valid rows; 0/165 components meet 95% fully usable records. Missing graphs are an input-recovery boundary, not a measured model-accuracy failure. No baseline accuracy is reported. An input recovery boundary is not evidence that the published method is inaccurate or intrinsically unreproducible.

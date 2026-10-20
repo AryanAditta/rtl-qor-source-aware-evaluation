@@ -1,0 +1,5 @@
+gate,status,detail,evidence_role
+1,PASS,"Released eight-vector, RF50/depth30/seed1 and pre-clipping min aggregation identified; own-contract supervision adaptation fixed before fitting",FEASIBILITY_AUDIT
+2,PASS,167/168 rows and 165/166 components bridge-valid; thresholds 135 and 133. Unassessed assets are explicitly distinct from measured residual failures.,FEASIBILITY_AUDIT
+3,FAIL,"0/167 bridge-valid rows; 0/165 components meet 95% fully usable records. Missing graphs are an input-recovery boundary, not a measured model-accuracy failure.",FEASIBILITY_AUDIT
+4,NOT_RUN,"Earlier gate, timebox or execution boundary; not a measured failure",RETROSPECTIVE_ADAPTED_BASELINE

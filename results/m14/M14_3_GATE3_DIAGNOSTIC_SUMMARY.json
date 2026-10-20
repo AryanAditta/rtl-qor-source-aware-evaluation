@@ -1,0 +1,20 @@
+{
+  "note": "Post-gate diagnostic description; it does not change Gate 3, its thresholds or the frozen mapping rule.",
+  "worker_status_counts": {
+    "NO_FEATURES": 15,
+    "UNSUPPORTED_RELEASED_TRAVERSAL_NO_CK_NODE": 60,
+    "PASS_UNCHANGED_RELEASED_PATH_FEATURES": 91,
+    "RELEASED_TRAVERSAL_EXCEPTION": 1
+  },
+  "selected_sta_record_classes": {
+    "reg_to_reg": 1013,
+    "input_to_reg": 970,
+    "reg_to_output": 15,
+    "input_to_output": 64
+  },
+  "rows_with_at_least_95pct_register_to_register_records": 79,
+  "components_with_such_rows": 78,
+  "bridge_valid_rows": 167,
+  "bridge_valid_components": 165,
+  "evidence_role": "FEASIBILITY_AUDIT"
+}
