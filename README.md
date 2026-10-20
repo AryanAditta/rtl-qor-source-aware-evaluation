@@ -70,7 +70,12 @@ See `docs/REPRODUCIBILITY.md` and `reproducibility/RELEASE_MANIFEST.md` for the 
 
 The manuscript is currently in submission preparation for *Integration, the VLSI Journal*.
 
-The submission-oriented archival release is designated **v1.0.0**. `CITATION.cff` contains repository citation metadata. After the GitHub repository is connected to Zenodo and the v1.0.0 release is archived, the **version-specific Zenodo DOI** will be added here and to the manuscript Data and Code Availability statement.
+The submission-oriented archival release is **v1.0.0**, archived by Zenodo on 20 October 2026.
+
+- **Version-specific DOI (cite this for the manuscript):** https://doi.org/10.5281/zenodo.23489958
+- **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.23489957
+
+`CITATION.cff` contains repository citation metadata. The version-specific DOI identifies the exact v1.0.0 release used for manuscript submission; the concept DOI resolves across versions.
 
 ## Licensing
 
