@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the archived release DOI and the associated manuscript when available."
+title: "Source-Aware RTL Area and Timing Prediction: Reproducibility Package"
+type: software
+authors:
+  - family-names: "Rahman Aditta"
+    given-names: "Arian"
+repository-code: "https://github.com/AryanAditta/rtl-qor-source-aware-evaluation"
+version: "1.0.0"
+license: MIT
+keywords:
+  - RTL
+  - quality of results
+  - area prediction
+  - timing prediction
+  - hardware design
+  - EDA
+  - reproducibility
+abstract: >-
+  Curated reproducibility package for the manuscript "Source-Aware Evaluation
+  of RTL Area and Timing Prediction with Prospective Confirmation." The
+  repository contains compact frozen prediction-level data, manuscript-facing
+  evidence tables, closure records and scripts for checking reported metrics,
+  while deliberately excluding the full historical research archive and
+  third-party RTL whose redistribution rights are uncertain.
