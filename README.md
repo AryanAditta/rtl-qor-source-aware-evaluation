@@ -24,17 +24,29 @@ These results are conditional on prediction support and valid physical labels. T
 
 ## Repository scope
 
-The release is organized around four layers:
+The release is organized around five layers:
 
 ```text
-admin/            frozen protocols, closure/freeze records and claim registry
-results/          compact manuscript-supporting tables and prediction-level outputs
-analysis/         selected final analysis notebooks/scripts required to reproduce reported tables/figures
-reproducibility/  environment, manifests, provenance notes and release boundaries
-docs/             detailed reproduction and data-availability notes
+admin/             frozen protocols, closure/freeze records and claim registry
+results/           compact manuscript-supporting tables and prediction-level outputs
+analysis/          selected final analysis notebooks/scripts required to reproduce reported tables/figures
+posthoc_analysis/  post-hoc robustness scripts and saved outputs added for manuscript revision
+reproducibility/   environment, manifests, provenance notes and release boundaries
+docs/              detailed reproduction and data-availability notes
 ```
 
 Large historical inventories, redundant intermediate checkpoints, debugging artifacts, private/supervisor material and third-party RTL that cannot be redistributed are deliberately excluded.
+
+## Post-hoc robustness update
+
+Version **v1.1.0** adds the post-hoc robustness material used in the revised manuscript:
+
+- absolute log-ratio contrasts for the fresh paired comparisons;
+- relative prediction-interval width/coverage summaries;
+- paired absolute-error contrasts in physical units;
+- the analysis script and revised figure-generation script used for those manuscript updates.
+
+These analyses re-score frozen predictions and frozen intervals after all fresh labels were known. They do **not** refit, recalibrate or reselect a model and do not alter any prospective primary endpoint.
 
 ## Predictor identities
 
@@ -66,16 +78,16 @@ This repository distinguishes three different goals:
 
 See `docs/REPRODUCIBILITY.md` and `reproducibility/RELEASE_MANIFEST.md` for the exact included/excluded scope.
 
-## Manuscript, citation and archival release
+## Manuscript, citation and archival releases
 
 The manuscript is currently in submission preparation for *Integration, the VLSI Journal*.
 
-The submission-oriented archival release is **v1.0.0**, archived by Zenodo on 20 October 2026.
+The original archival release is **v1.0.0**, archived by Zenodo on 20 October 2026. The revised submission package is prepared as **v1.1.0**, which adds the `posthoc_analysis/` scripts and saved outputs described above.
 
-- **Version-specific DOI (cite this for the manuscript):** https://doi.org/10.5281/zenodo.23489958
-- **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.23489957
+- **Zenodo concept DOI (all versions):** https://doi.org/10.5281/zenodo.23489957
+- **v1.0.0 version-specific DOI:** https://doi.org/10.5281/zenodo.23489958
 
-`CITATION.cff` contains repository citation metadata. The version-specific DOI identifies the exact v1.0.0 release used for manuscript submission; the concept DOI resolves across versions.
+A new version-specific DOI will be minted by Zenodo when the GitHub **v1.1.0** release is published. `CITATION.cff` has been advanced to version 1.1.0 for that archive.
 
 ## Licensing
 
