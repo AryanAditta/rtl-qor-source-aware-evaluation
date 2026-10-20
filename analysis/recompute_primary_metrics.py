@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recompute the manuscript's primary released prediction-level metrics.
+"""Recompute the manuscript's released prediction-level metrics.
 
 This script does not fit a model, regenerate a feature, rerun synthesis/STA or
 change any label. It reads only the compact frozen prediction tables released
@@ -13,6 +13,7 @@ from scipy.stats import pearsonr, spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 FRESH = ROOT / "data" / "fresh_primary_predictions.csv"
+SOURCE_AREA = ROOT / "data" / "source50_secondary_area_predictions.csv"
 EXTERNAL = ROOT / "data" / "external83_primary_predictions.csv"
 
 
@@ -37,7 +38,7 @@ def basic_metrics(y, pred):
         "raw_R2": r2,
         "Pearson_r": pearson,
         "Spearman_rho": spearman,
-        "macro_log1p": np.mean(logerr),  # released primary cohorts: one row/component
+        "macro_log1p": np.mean(logerr),
         "MdAPE_percent": mdape,
         "within_10pct": within10,
         "within_20pct": within20,
@@ -81,6 +82,17 @@ def fresh_endpoint(df, cohort, bootstrap_seed):
     print(f"lower candidate error: {improved}/{n}")
 
 
+def source50_secondary_area(df):
+    if len(df) != 39 or df["source_component"].nunique() != 39:
+        raise RuntimeError("Source50 secondary Area: expected 39 paired rows/components")
+    y = df["area_label_um2"]
+    native = df["native_area_prediction_um2"]
+    candidate = df["candidate_area_prediction_um2"]
+    print("\nSource50 secondary Area endpoint (not an independent cohort)")
+    print("native:", basic_metrics(y, native))
+    print("candidate:", basic_metrics(y, candidate))
+
+
 def external83(df):
     if len(df) != 83 or df["source_component"].nunique() != 83:
         raise RuntimeError("External83: expected 83 rows/components")
@@ -106,10 +118,12 @@ def external83(df):
 
 def main():
     fresh = pd.read_csv(FRESH)
+    source_area = pd.read_csv(SOURCE_AREA)
     external = pd.read_csv(EXTERNAL)
 
     fresh_endpoint(fresh, "Reserve50", bootstrap_seed=143)
     fresh_endpoint(fresh, "Source50", bootstrap_seed=149)
+    source50_secondary_area(source_area)
     external83(external)
 
 
