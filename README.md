@@ -80,7 +80,7 @@ See `docs/REPRODUCIBILITY.md` and `reproducibility/RELEASE_MANIFEST.md` for the 
 
 ## Manuscript, citation and archival releases
 
-The manuscript is currently in submission preparation for *Integration, the VLSI Journal*.
+The manuscript is currently **in preparation**.
 
 The original archival release is **v1.0.0**, archived by Zenodo on 20 October 2026. The revised submission package is prepared as **v1.1.0**, which adds the `posthoc_analysis/` scripts and saved outputs described above.
 
