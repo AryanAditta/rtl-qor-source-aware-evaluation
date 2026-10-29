@@ -2,6 +2,8 @@
 
 Curated reproducibility package for the manuscript **“Source-Aware Evaluation of RTL Area and Timing Prediction with Prospective Confirmation.”**
 
+**Research profile:** [VLSI/EDA academic website](https://aryanaditta.github.io/eda-academic/) · [EDA CV](https://aryanaditta.github.io/eda-academic/Arian_Rahman_Aditta_EDA_CV.pdf)
+
 This repository supports a study of early RTL prediction for two targets under one pinned open-source Nangate45 flow:
 
 - **Mapped standard-cell area** in µm²
@@ -21,6 +23,15 @@ The two principal prospective confirmations are method-specific:
 - **Source50 Timing:** 50 intended inputs, 41 prediction-supported, 45 validly labelled and **39 paired**. The frozen TimingV2 candidate reduced MAE from approximately **0.167 to 0.136 ns** and the primary component-macro absolute log1p loss by **17.5%** relative to its frozen native comparator on the paired evaluable intersection.
 
 These results are conditional on prediction support and valid physical labels. They do not establish post-layout/signoff accuracy, cross-technology transfer, arbitrary-RTL support or a state-of-the-art ranking across incompatible published targets.
+
+## Related ongoing extensions — outside the frozen manuscript
+
+Separate research pilots are extending the broader source-aware workflow beyond the two frozen manuscript targets:
+
+- **RTL-to-power labeling:** development of a reproducible pre-layout power-labeling contract with explicit separation of leakage, internal, switching and total power under a fixed technology/activity setup.
+- **OpenROAD physical-design characterization:** stage-wise characterization from synthesis/pre-layout timing through floorplanning, placement, CTS and routing, retaining physical metrics and artifacts for later analysis.
+
+These are **ongoing feasibility and labeling-pipeline extensions**. They are not part of the R4.1 manuscript evidence and are not presented here as completed prediction results. This separation is intentional so the frozen Area/Timing claims remain auditable.
 
 ## Repository scope
 
